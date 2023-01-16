@@ -20,7 +20,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="AioWebSocket实现python异步接收B站直播弹幕">
 <meta property="og:url" content="http://huihui486.github.io/2023/01/16/AioWebSocket%E5%AE%9E%E7%8E%B0python%E5%BC%82%E6%AD%A5%E6%8E%A5%E6%94%B6B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95/index.html">
-<meta property="og:site_name" content="一方通行">
+<meta property="og:site_name" content="那菈huihui的小板凳">
 <meta property="og:description" content="前言本文是2022-01-13发表于CSDN上的文章，当时并未搭建好网站，故现将此文转移至此。 原文：https:&#x2F;&#x2F;blog.csdn.net&#x2F;Sharp486&#x2F;article&#x2F;details&#x2F;122466308 第一次写文章，若有不对的地方请多多包涵并指正。 本篇后续：【python+pyqt5】B站直播弹幕姬 AioWebSocket是什么认识WebSocketWebsocket是一种在单个">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/1d2c0786620c4c179d79fcdcabd928c3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAU2hhcnA0ODY=,size_20,color_FFFFFF,t_70,g_se,x_16">
@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/56fe821abf8748b9a59de8f931c918af.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAU2hhcnA0ODY=,size_13,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/06c2b091999242798bd167305057fcad.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAU2hhcnA0ODY=,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2023-01-16T01:38:20.000Z">
-<meta property="article:modified_time" content="2023-01-16T07:29:49.549Z">
+<meta property="article:modified_time" content="2023-01-16T13:33:04.869Z">
 <meta property="article:author" content="灰灰">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="pyqt5">
@@ -42,7 +42,7 @@
   
   
   
-  <title>AioWebSocket实现python异步接收B站直播弹幕 - 一方通行</title>
+  <title>AioWebSocket实现python异步接收B站直播弹幕 ✿ 那菈huihui的小板凳</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -123,7 +123,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>高天之歌</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -352,7 +352,7 @@
 <p>入口</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    <span class="hljs-keyword">try</span>:<br>        loop = asyncio.get_event_loop()<br>        loop.run_until_complete(startup())<br>    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;退出&#x27;</span>)<br></code></pre></td></tr></table></figure>
 
-<p>输入结果：</p>
+<p>输出结果：</p>
 <img src="https://img-blog.csdnimg.cn/06c2b091999242798bd167305057fcad.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAU2hhcnA0ODY=,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述" style="zoom:80%;" />
 
 <p>[DANMU]开头的就是接收到的弹幕内容了。<br>开始还报了一个warning，是因为</p>
@@ -802,7 +802,7 @@
 <script  src="/js/boot.js" ></script>
 
 
-  <script src="/live2d-widget/autoload.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/huihui486/live2d-widget@latest/autoload.js"></script>
 
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
