@@ -1,0 +1,784 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="灰灰">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1. 除2取余法实现十进制转二进制众所周知，十进制转二进制最广为人知、家喻户晓的方法，就是 整数部分除2取余，小数部分乘2取整 这个方法简单便捷易上手，且代码实现也比较简单 1234567891011121314151617181920import sysnum &#x3D; input(&quot;传统方法十进制转二进制整数部分\n请输入十进制整数：&quot;)while True:    if num">
+<meta property="og:type" content="article">
+<meta property="og:title" content="凑数法实现十进制转二进制">
+<meta property="og:url" content="http://huihui486.github.io/2023/01/18/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/index.html">
+<meta property="og:site_name" content="那菈huihui的小板凳">
+<meta property="og:description" content="1. 除2取余法实现十进制转二进制众所周知，十进制转二进制最广为人知、家喻户晓的方法，就是 整数部分除2取余，小数部分乘2取整 这个方法简单便捷易上手，且代码实现也比较简单 1234567891011121314151617181920import sysnum &#x3D; input(&quot;传统方法十进制转二进制整数部分\n请输入十进制整数：&quot;)while True:    if num">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/58ca7ec277e64ae0b566922180a0ca5e.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3204c1e25c39497594ef3a58d523e03e.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/13f0d3b785f84364bc14479e68266db6.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/0cd81f550a464c5fa3de905eabd61c38.png">
+<meta property="article:published_time" content="2023-01-18T09:33:39.000Z">
+<meta property="article:modified_time" content="2023-01-18T12:56:00.963Z">
+<meta property="article:author" content="灰灰">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="进制转换">
+<meta property="article:tag" content="代码实现">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/58ca7ec277e64ae0b566922180a0ca5e.png">
+  
+  
+  
+  <title>凑数法实现十进制转二进制 ✿ 那菈huihui的小板凳</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"huihui486.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"♫","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"3w7iZCiLNBOJaaqPTGOpiYub-gzGzoHsz","app_key":"5zwpHO6dB3fq4AzujAyuLqv8","server_url":"https://3w7izcil.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>高天之歌</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.1)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="凑数法实现十进制转二进制"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-01-18 17:33" pubdate>
+          2023年1月18日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">凑数法实现十进制转二进制</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="1-除2取余法实现十进制转二进制"><a href="#1-除2取余法实现十进制转二进制" class="headerlink" title="1. 除2取余法实现十进制转二进制"></a>1. 除2取余法实现十进制转二进制</h1><p>众所周知，十进制转二进制最广为人知、家喻户晓的方法，就是</p>
+<p><strong>整数部分除2取余，小数部分乘2取整</strong></p>
+<p>这个方法简单便捷易上手，且代码实现也比较简单</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs py"><span class="hljs-keyword">import</span> sys<br><br>num = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;传统方法十进制转二进制整数部分\n请输入十进制整数：&quot;</span>)<br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    <span class="hljs-keyword">if</span> num.isdigit():<br>        num = <span class="hljs-built_in">int</span>(num)<br>        <span class="hljs-keyword">if</span> num &lt;= sys.maxsize:<br>            <span class="hljs-keyword">break</span><br>    num = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;非法输入，请重试：&quot;</span>)<br><br>result = <span class="hljs-string">&#x27;&#x27;</span><br>temp = num<br><br><span class="hljs-keyword">while</span> temp&gt;<span class="hljs-number">0</span>:<br>    result = <span class="hljs-built_in">str</span>(temp % <span class="hljs-number">2</span>) + result<br>    temp = <span class="hljs-built_in">int</span>(temp / <span class="hljs-number">2</span>)<br>    <span class="hljs-built_in">print</span>(result,temp)<br><br><span class="hljs-built_in">print</span>(num,<span class="hljs-string">&quot;的二进制结果为：&quot;</span>,result)<br></code></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-凑数法实现十进制转二进制"><a href="#2-凑数法实现十进制转二进制" class="headerlink" title="2. 凑数法实现十进制转二进制"></a>2. 凑数法实现十进制转二进制</h1><h2 id="2-1-凑数法是什么"><a href="#2-1-凑数法是什么" class="headerlink" title="2.1 凑数法是什么"></a>2.1 凑数法是什么</h2><p>简单来说，凑数法是将每一位1乘上该位对应的2^(n-1)再累加起来，所以会出现每一项都等于此项前所有项的和的性质。</p>
+<p>举个栗子：</p>
+<p><strong>123 &#x3D; 64+32+16+8+2+1 &#x3D; 2^6+2^5+2^4+2^3+2^1+2^0  &#x3D; 1111011</strong></p>
+<p>可以看到，123是将除了4&#x3D;2^2以外，即除了第3位以外的第1、2、4、5、6、7位上的2^(n-1)相加，即为所求。而将这些位填上1，其余位填上0即为1111011。</p>
+<h2 id="2-2-凑数法另一种解读"><a href="#2-2-凑数法另一种解读" class="headerlink" title="2.2 凑数法另一种解读"></a>2.2 <a id='second'>凑数法另一种解读</a></h2><p>上面的这种方式如果用手算的话计算量太大，还不如直接用除2取余来的划算。所以有了第二种解读。</p>
+<p>另一种解读方式为<strong>比较法</strong>。</p>
+<p>还是上面这个例子，我们先列出一张2的n次幂的表，接着从高位开始用123与之比较，若123小则取0；若123大取1，且减去2的n次幂。然后移动至低一位用新的数接着比较。如下图所示，以此类推，当比较完所有位后，即可得出结果。</p>
+<img src="https://img-blog.csdnimg.cn/58ca7ec277e64ae0b566922180a0ca5e.png" srcset="/img/loading.gif" lazyload alt="第一步" style="zoom:80%;" />
+
+<img src="https://img-blog.csdnimg.cn/3204c1e25c39497594ef3a58d523e03e.png" srcset="/img/loading.gif" lazyload alt="第二步" style="zoom:80%;" />
+
+<h2 id="2-3-python代码实现凑数法"><a href="#2-3-python代码实现凑数法" class="headerlink" title="2.3 python代码实现凑数法"></a>2.3 python代码实现凑数法</h2><p>代码实现有很多种方式，这里选取的是<a href='#second'>第二种解读方式</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> sys<br><br>num = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;十进制转二进制凑数法整数部分实现\n请输入十进制整数：&quot;</span>)<br><br><span class="hljs-comment"># 2^63=9223372036854775808</span><br><span class="hljs-comment"># sys.maxsize=2^63</span><br><span class="hljs-comment"># 防止数值越界</span><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    <span class="hljs-keyword">if</span> num.isdigit():<br>        num = <span class="hljs-built_in">int</span>(num)<br>        <span class="hljs-keyword">if</span> num &lt;= sys.maxsize:<br>            <span class="hljs-keyword">break</span><br>    num = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;非法输入，请重试：&quot;</span>)<br><br>max_index = <span class="hljs-number">1</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">63</span>):<br>    <span class="hljs-keyword">if</span> num &lt; <span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,i):<br>        max_index = i-<span class="hljs-number">1</span><br>        <span class="hljs-comment">#print(max_index)</span><br>        <span class="hljs-keyword">break</span><br><br>result = <span class="hljs-string">&#x27;&#x27;</span><br>temp = num<br><span class="hljs-keyword">for</span> index <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(max_index,-<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>):<br>    <span class="hljs-keyword">if</span> temp &gt;= <span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,index):<br>        result = result + <span class="hljs-string">&#x27;1&#x27;</span><br>        temp = <span class="hljs-built_in">abs</span>(temp - <span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>, index))<br>    <span class="hljs-keyword">else</span>:<br>        result = result + <span class="hljs-string">&#x27;0&#x27;</span><br><br><span class="hljs-built_in">print</span>(num,<span class="hljs-string">&quot;的二进制结果为：&quot;</span>,result)<br></code></pre></td></tr></table></figure>
+
+
+
+<h1 id="3-凑数法优势？"><a href="#3-凑数法优势？" class="headerlink" title="3. 凑数法优势？"></a>3. 凑数法优势？</h1><p>那么看到这里有朋友可能要说，那是不是凑数法一定比取2取余法好用呢？</p>
+<p>要想知道结果很简单，在代码里加入time模块来监视程序运行时间，比较之下就能知道孰胜孰劣。修改代码如下</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><code class="hljs py"><span class="hljs-keyword">import</span> sys<br><span class="hljs-keyword">import</span> time<br><br><span class="hljs-comment"># 输入</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">input_num</span>():<br>    num = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;十进制转二进制凑数法整数部分实现\n请输入十进制整数：&quot;</span>)<br>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>        <span class="hljs-keyword">if</span> num.isdigit():<br>            num = <span class="hljs-built_in">int</span>(num)<br>            <span class="hljs-keyword">if</span> num &lt;= sys.maxsize:<br>                <span class="hljs-keyword">break</span><br>        num = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;非法输入，请重试：&quot;</span>)<br>    <span class="hljs-keyword">return</span> num<br><br><span class="hljs-comment"># 凑数法</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">comparison_method</span>(<span class="hljs-params">num</span>):<br>    max_index = <span class="hljs-number">1</span><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">63</span>):<br>        <span class="hljs-keyword">if</span> num &lt; <span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,i):<br>            max_index = i-<span class="hljs-number">1</span><br>            <span class="hljs-keyword">break</span><br>    result = <span class="hljs-string">&#x27;&#x27;</span><br>    temp = num<br>    <span class="hljs-keyword">for</span> index <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(max_index,-<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>):<br>        <span class="hljs-keyword">if</span> temp &gt;= <span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,index):<br>            result = result + <span class="hljs-string">&#x27;1&#x27;</span><br>            temp = <span class="hljs-built_in">abs</span>(temp - <span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>, index))<br>        <span class="hljs-keyword">else</span>:<br>            result = result + <span class="hljs-string">&#x27;0&#x27;</span><br>    <span class="hljs-keyword">return</span> result<br><br><br><span class="hljs-comment"># 除2取余</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">division_method</span>(<span class="hljs-params">num</span>):<br>    result = <span class="hljs-string">&#x27;&#x27;</span><br>    temp = num<br>    <span class="hljs-keyword">while</span> temp&gt;<span class="hljs-number">0</span>:<br>        result = <span class="hljs-built_in">str</span>(temp % <span class="hljs-number">2</span>) + result<br>        temp = <span class="hljs-built_in">int</span>(temp / <span class="hljs-number">2</span>)<br>    <span class="hljs-keyword">return</span> result<br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    num = input_num()<br>    start = time.perf_counter()<br>    result1 = comparison_method(num)<br>    middle = time.perf_counter()<br>    result2 = division_method(num)<br>    end = time.perf_counter()<br>    <span class="hljs-built_in">print</span>(num,<span class="hljs-string">&quot;凑数法结果为：&quot;</span>,result1,<span class="hljs-string">&quot;用时：&quot;</span>,<span class="hljs-built_in">str</span>(middle-start))<br>    <span class="hljs-built_in">print</span>(num,<span class="hljs-string">&quot;除2取余法结果为：&quot;</span>,result2,<span class="hljs-string">&quot;用时：&quot;</span>,<span class="hljs-built_in">str</span>(end-middle))<br></code></pre></td></tr></table></figure>
+
+<p>输入123456，输出结果如下图所示。</p>
+<p><img src="https://img-blog.csdnimg.cn/13f0d3b785f84364bc14479e68266db6.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
+<p>可见凑数法并没有比除2取余法快，反而更慢了，而且这种差距随着数字增加继续扩大</p>
+<p><img src="https://img-blog.csdnimg.cn/0cd81f550a464c5fa3de905eabd61c38.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></p>
+<p>因为在位数多的情况下，凑数法不仅要跟所有位进行比较，还要作减法；而除2取余只有除法，这一点在计算机速度上可以体现出来。</p>
+<p>而且在实际手算中，除2取余法也要比凑数法更快（数字不小的情况下）。这也难怪除2取余法会成为最为流行的十进制转二进制方法了。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%AE%97%E6%B3%95/" class="category-chain-item">算法</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%AE%97%E6%B3%95/%E5%87%91%E6%95%B0%E6%B3%95/" class="category-chain-item">凑数法</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%AE%97%E6%B3%95/">#算法</a>
+      
+        <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/">#进制转换</a>
+      
+        <a href="/tags/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/">#代码实现</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>凑数法实现十进制转二进制</div>
+      <div>http://huihui486.github.io/2023/01/18/凑数法实现十进制转二进制/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>灰灰</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年1月18日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="ND - 禁止演绎">
+                    <i class="iconfont icon-nd"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/01/18/%E8%AF%B4%E6%98%8E/" title="说明">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">说明</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/01/18/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/" title="B站直播弹幕姬">
+                        <span class="hidden-mobile">B站直播弹幕姬</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"3w7iZCiLNBOJaaqPTGOpiYub-gzGzoHsz","appKey":"5zwpHO6dB3fq4AzujAyuLqv8","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <span>power by </span> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <i class="iconfont icon-love"></i> <span>huihui since 2023-1-14</span> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/huihui486/live2d-widget@latest/autoload.js"></script>
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
