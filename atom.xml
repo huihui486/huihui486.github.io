@@ -6,7 +6,7 @@
   <link href="http://huihui486.github.io/atom.xml" rel="self"/>
   
   <link href="http://huihui486.github.io/"/>
-  <updated>2023-01-19T12:57:00.771Z</updated>
+  <updated>2023-02-05T13:34:36.905Z</updated>
   <id>http://huihui486.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>按序输出方形位置信息</title>
+    <link href="http://huihui486.github.io/2023/02/04/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/"/>
+    <id>http://huihui486.github.io/2023/02/04/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/</id>
+    <published>2023-02-04T13:12:45.000Z</published>
+    <updated>2023-02-05T13:34:36.905Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="http://huihui486.github.io/categories/python/"/>
+    
+    <category term="小应用" scheme="http://huihui486.github.io/categories/python/%E5%B0%8F%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="python" scheme="http://huihui486.github.io/tags/python/"/>
+    
+    <category term="坐标" scheme="http://huihui486.github.io/tags/%E5%9D%90%E6%A0%87/"/>
+    
+  </entry>
   
   <entry>
     <title>说明</title>
@@ -73,7 +102,7 @@
     <link href="http://huihui486.github.io/2023/01/17/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/"/>
     <id>http://huihui486.github.io/2023/01/17/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/</id>
     <published>2023-01-17T08:42:21.000Z</published>
-    <updated>2023-01-19T07:22:31.143Z</updated>
+    <updated>2023-02-04T13:31:43.904Z</updated>
     
     
       
