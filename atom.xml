@@ -6,7 +6,7 @@
   <link href="https://huihui486.github.io/atom.xml" rel="self"/>
   
   <link href="https://huihui486.github.io/"/>
-  <updated>2023-02-20T14:38:35.005Z</updated>
+  <updated>2023-04-01T02:05:27.596Z</updated>
   <id>https://huihui486.github.io/</id>
   
   <author>
@@ -21,16 +21,10 @@
     <link href="https://huihui486.github.io/2023/02/07/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/"/>
     <id>https://huihui486.github.io/2023/02/07/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/</id>
     <published>2023-02-07T10:29:08.000Z</published>
-    <updated>2023-02-20T14:38:35.005Z</updated>
+    <updated>2023-04-01T02:05:27.596Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">zip、7z、rar等压缩包统统拿下</summary>
     
     
     
@@ -54,16 +48,10 @@
     <link href="https://huihui486.github.io/2023/02/04/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/"/>
     <id>https://huihui486.github.io/2023/02/04/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/</id>
     <published>2023-02-04T13:12:45.000Z</published>
-    <updated>2023-02-05T13:34:36.905Z</updated>
+    <updated>2023-04-01T02:04:35.737Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">小需求...</summary>
     
     
     
@@ -79,41 +67,14 @@
   </entry>
   
   <entry>
-    <title>说明</title>
-    <link href="https://huihui486.github.io/2023/01/18/%E8%AF%B4%E6%98%8E/"/>
-    <id>https://huihui486.github.io/2023/01/18/%E8%AF%B4%E6%98%8E/</id>
-    <published>2023-01-18T10:29:40.000Z</published>
-    <updated>2023-02-12T06:27:54.550Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>凑数法实现十进制转二进制</title>
     <link href="https://huihui486.github.io/2023/01/18/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
     <id>https://huihui486.github.io/2023/01/18/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/</id>
     <published>2023-01-18T09:33:39.000Z</published>
-    <updated>2023-01-19T01:35:11.724Z</updated>
+    <updated>2023-04-01T02:04:02.975Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">凑数法vs除2取余+乘2取整</summary>
     
     
     
@@ -135,16 +96,10 @@
     <link href="https://huihui486.github.io/2023/01/17/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/"/>
     <id>https://huihui486.github.io/2023/01/17/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/</id>
     <published>2023-01-17T08:42:21.000Z</published>
-    <updated>2023-02-04T13:31:43.904Z</updated>
+    <updated>2023-04-01T02:06:30.444Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">基于pyqt5，websocket协议b站直播弹幕显示软件</summary>
     
     
     
@@ -172,16 +127,10 @@
     <link href="https://huihui486.github.io/2023/01/16/AioWebSocket%E5%AE%9E%E7%8E%B0python%E5%BC%82%E6%AD%A5%E6%8E%A5%E6%94%B6B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95/"/>
     <id>https://huihui486.github.io/2023/01/16/AioWebSocket%E5%AE%9E%E7%8E%B0python%E5%BC%82%E6%AD%A5%E6%8E%A5%E6%94%B6B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95/</id>
     <published>2023-01-16T01:38:20.000Z</published>
-    <updated>2023-01-18T12:52:21.191Z</updated>
+    <updated>2023-04-01T02:07:08.992Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">基于websocket协议模拟浏览器获取b站直播弹幕</summary>
     
     
     
@@ -203,16 +152,10 @@
     <link href="https://huihui486.github.io/2023/01/14/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
     <id>https://huihui486.github.io/2023/01/14/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
     <published>2023-01-14T15:00:00.000Z</published>
-    <updated>2023-01-16T01:33:00.928Z</updated>
+    <updated>2023-04-01T02:01:58.076Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">my first words</summary>
     
     
     

@@ -66,19 +66,6 @@
   
   
   <entry>
-    <title>说明</title>
-    <link href="/2023/01/18/%E8%AF%B4%E6%98%8E/"/>
-    <url>/2023/01/18/%E8%AF%B4%E6%98%8E/</url>
-    
-    <content type="html"><![CDATA[<h1 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h1><p>本站基于<a href="https://github.com/huihui486/huihui486.github.io">github仓库</a>，搭配框架而成，加载可能偏慢，甚至出现加载失败情况，请多尝试刷新或百度加速方法。</p><p>有问题欢迎<a href="/about/">联系我</a>。</p><h1 id="关于评论"><a href="#关于评论" class="headerlink" title="关于评论"></a>关于评论</h1><p>每篇文章末尾会有评论功能，但由于没有登录功能，无法保存用户名等信息，故昵称需自行填写。必要时可以填上昵称方便识别您的评论内容为同一人。</p><p>评论内容与链接一一对应，若文章标题更改，网站链接也将改变，评论内容将清空。</p><h1 id="关于看板娘-live2d"><a href="#关于看板娘-live2d" class="headerlink" title="关于看板娘(live2d)"></a>关于看板娘(live2d)</h1><p>使用大佬接口，模型有限。可以对话、换模型，有彩蛋，不喜欢可以关闭。</p><p>移动端可能会出问题，无法显示、使用。</p><h1 id="安利"><a href="#安利" class="headerlink" title="安利"></a>安利</h1><p>安利一个本人在用的airport</p><p>优点：便宜、速度快、稳定，不限设备，晚高峰不限速。</p><p><a href="https://www.fyb-aff.com/auth/register?code=2Dbf">戳这里直达官网</a></p><p>使用：官网有详细教程与下载链接。</p><p><img src="/img/airport01.png"></p><p><img src="/img/airport02.png"></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>凑数法实现十进制转二进制</title>
     <link href="/2023/01/18/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
     <url>/2023/01/18/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/</url>
