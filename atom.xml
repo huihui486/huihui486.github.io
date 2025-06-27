@@ -6,7 +6,7 @@
   <link href="https://huihui486.github.io/atom.xml" rel="self"/>
   
   <link href="https://huihui486.github.io/"/>
-  <updated>2023-06-17T02:25:22.420Z</updated>
+  <updated>2025-06-27T16:01:24.763Z</updated>
   <id>https://huihui486.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo + github page 搭建个人博客网站</title>
+    <link href="https://huihui486.github.io/2025/06/27/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
+    <id>https://huihui486.github.io/2025/06/27/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</id>
+    <published>2025-06-27T08:53:10.000Z</published>
+    <updated>2025-06-27T16:01:24.763Z</updated>
+    
+    
+    <summary type="html">从零开始搭博客...</summary>
+    
+    
+    
+    <category term="教程" scheme="https://huihui486.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="https://huihui486.github.io/categories/%E6%95%99%E7%A8%8B/Hexo/"/>
+    
+    
+    <category term="教程" scheme="https://huihui486.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="技术" scheme="https://huihui486.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Hexo" scheme="https://huihui486.github.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>python破解压缩包密码</title>
@@ -68,10 +93,10 @@
   
   <entry>
     <title>说明</title>
-    <link href="https://huihui486.github.io/2023/01/18/%E8%AF%B4%E6%98%8E/"/>
-    <id>https://huihui486.github.io/2023/01/18/%E8%AF%B4%E6%98%8E/</id>
-    <published>2023-01-18T10:29:40.000Z</published>
-    <updated>2023-04-01T06:59:25.196Z</updated>
+    <link href="https://huihui486.github.io/2023/01/19/%E8%AF%B4%E6%98%8E/"/>
+    <id>https://huihui486.github.io/2023/01/19/%E8%AF%B4%E6%98%8E/</id>
+    <published>2023-01-19T10:29:40.000Z</published>
+    <updated>2025-06-27T07:50:07.328Z</updated>
     
     
     <summary type="html">一些事项...</summary>

@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>Hexo + github page 搭建个人博客网站</title>
+    <link href="/2025/06/27/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
+    <url>/2025/06/27/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</url>
+    
+    <content type="html"><![CDATA[<h1 id="1-连接至github"><a href="#1-连接至github" class="headerlink" title="1.连接至github"></a>1.连接至github</h1><p>生成新的ssh公钥，替换成自己的github名字和邮箱</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;xxx&quot;</span><br>git config --global user.email <span class="hljs-string">&quot;xxx@xx.com&quot;</span><br>ssh-keygen -t rsa -C <span class="hljs-string">&quot;xxx@xx.com&quot;</span><br></code></pre></td></tr></table></figure><p>获取ssh key公钥内容</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 进入ssh目录</span><br><span class="hljs-built_in">cd</span> ~/.ssh<br><span class="hljs-comment"># 查看ssh公钥并复制</span><br><span class="hljs-built_in">cat</span> id_rsa.pub<br></code></pre></td></tr></table></figure><p>或者直接打开id_rsa.pub文件进行复制</p><p><img src="/img/Hexo_Image/PixPin_2025-06-27_23-52-32.png"></p><h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1.常用命令"></a>1.常用命令</h1><h2 id="清理生成的文件"><a href="#清理生成的文件" class="headerlink" title="清理生成的文件"></a>清理生成的文件</h2><p>删除hexo站点根目录下的\public文件夹</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br></code></pre></td></tr></table></figure><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><p>在hexo站点根目录下生成\public文件夹</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate <span class="hljs-comment"># 或：hexo g</span><br></code></pre></td></tr></table></figure><h2 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h2><p>启动服务，实时渲染，默认网址为<a href="http://localhost:4000/">http://localhost:4000/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server <span class="hljs-comment"># 或：hexo server</span><br></code></pre></td></tr></table></figure><h2 id="部署至github-page站点"><a href="#部署至github-page站点" class="headerlink" title="部署至github page站点"></a>部署至github page站点</h2><p>将在本地生成\.deploy_git文件夹，并commit、push上传至github</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy <span class="hljs-comment"># 或：hexo d</span><br></code></pre></td></tr></table></figure><h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>在\scaffolds文件夹里搜索layout.md，找不到则默认为post.md，并在\source\_posts文件夹下用该模板新建title.md</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new [layout] &lt;title&gt; <span class="hljs-comment"># 例如：hexo new post &quot;my-first-blog&quot;</span><br></code></pre></td></tr></table></figure><h2 id="修改后重新部署（多命令串联）"><a href="#修改后重新部署（多命令串联）" class="headerlink" title="修改后重新部署（多命令串联）"></a>修改后重新部署（多命令串联）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br></code></pre></td></tr></table></figure><h1 id="2-安装插件"><a href="#2-安装插件" class="headerlink" title="2.安装插件"></a>2.安装插件</h1><p>正确渲染公式</p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>教程</tag>
+      
+      <tag>技术</tag>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>python破解压缩包密码</title>
     <link href="/2023/02/07/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/"/>
     <url>/2023/02/07/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/</url>
@@ -67,8 +98,8 @@
   
   <entry>
     <title>说明</title>
-    <link href="/2023/01/18/%E8%AF%B4%E6%98%8E/"/>
-    <url>/2023/01/18/%E8%AF%B4%E6%98%8E/</url>
+    <link href="/2023/01/19/%E8%AF%B4%E6%98%8E/"/>
+    <url>/2023/01/19/%E8%AF%B4%E6%98%8E/</url>
     
     <content type="html"><![CDATA[<h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><h2 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h2><p>本站基于<a href="https://github.com/huihui486/huihui486.github.io">github仓库</a>，搭配框架而成，加载可能偏慢，甚至出现加载失败情况，请多尝试刷新或百度加速方法。</p><p>有问题欢迎<a href="/about/">联系我</a>。</p><h2 id="关于评论"><a href="#关于评论" class="headerlink" title="关于评论"></a>关于评论</h2><p>每篇文章末尾会有评论功能，但由于没有登录功能，无法保存用户名等信息，故昵称需自行填写。必要时可以填上昵称方便识别您的评论内容为同一人。</p><p>评论内容与链接一一对应，若文章标题更改，网站链接也将改变，评论内容将清空。</p><h2 id="关于看板娘-live2d"><a href="#关于看板娘-live2d" class="headerlink" title="关于看板娘(live2d)"></a>关于看板娘(live2d)</h2><p>使用大佬接口，模型有限。可以对话、换模型，有彩蛋，不喜欢可以关闭。</p><p>移动端可能会出问题，无法显示、使用。</p><h1 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h1><h2 id="Evolve进化"><a href="#Evolve进化" class="headerlink" title="Evolve进化"></a>Evolve进化</h2><p>游戏图鉴</p><p><img src="/img/evolve.png"></p><p>注意</p><p>请大家记得<strong>定期保存、导出存档，备份</strong>，以免存档丢失，失去继续玩的动力。</p><p>建议使用<strong>Chrome（谷歌）</strong>或者<strong>Firefox（火狐）</strong>浏览器进行游戏。</p><p>适度游戏益脑，沉迷游戏伤身</p><p>合理安排时间，享受健康生活</p><p>游戏地址</p><p><a href="/Evolve">https://huihui486.github.io/Evolve</a></p><h1 id="安利"><a href="#安利" class="headerlink" title="安利"></a>安利</h1><p>安利一个本人在用的airport</p><p>优点：便宜、速度快、稳定，不限设备，晚高峰不限速。</p><p><a href="https://www.fyb-aff.com/auth/register?code=2Dbf">戳这里直达官网</a></p><p>使用：官网有详细教程与下载链接。</p><p><img src="/img/airport01.png"></p><p><img src="/img/airport02.png"></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
