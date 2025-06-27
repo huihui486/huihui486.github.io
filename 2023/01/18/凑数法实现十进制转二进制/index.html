@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/5f4dff71992941aaa7f57ba91519fee8.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/c2d6f4bbe49e4068a3cec74954b97f0d.png">
 <meta property="article:published_time" content="2023-01-18T09:33:39.000Z">
-<meta property="article:modified_time" content="2023-08-02T00:46:26.422Z">
+<meta property="article:modified_time" content="2025-06-27T03:16:17.709Z">
 <meta property="article:author" content="灰灰">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="进制转换">
@@ -320,9 +320,7 @@
 
 
 <h1 id="2-凑数法实现十进制转二进制"><a href="#2-凑数法实现十进制转二进制" class="headerlink" title="2. 凑数法实现十进制转二进制"></a>2. 凑数法实现十进制转二进制</h1><h2 id="2-1-凑数法是什么"><a href="#2-1-凑数法是什么" class="headerlink" title="2.1 凑数法是什么"></a>2.1 凑数法是什么</h2><p>简单来说，凑数法是将每一位1乘上该位对应的2^(n-1)再累加起来，所以会出现每一项都等于此项前所有项的和的性质。</p>
-<p>举个栗子：</p>
-<p><strong>123 &#x3D; 64+32+16+8+2+1 &#x3D; 2^6+2^5+2^4+2^3+2^1+2^0  &#x3D; 1111011</strong></p>
-<p>可以看到，123是将除了4&#x3D;2^2以外，即除了第3位以外的第1、2、4、5、6、7位上的2^(n-1)相加，即为所求。而将这些位填上1，其余位填上0即为1111011。</p>
+<p>举个栗子：<br>$$<br>123 &#x3D; 64+32+16+8+2+1 &#x3D; 2^6+2^5+2^4+2^3+2^1+2^0  &#x3D; 1111011<br>$$<br>可以看到，123是将除了4&#x3D;2<sup>2</sup>以外，即除了第3位以外的第1、2、4、5、6、7位上的2<sup>(n-1)</sup>相加，即为所求。而将这些位填上1，其余位填上0即为1111011。</p>
 <h2 id="2-2-凑数法另一种解读"><a href="#2-2-凑数法另一种解读" class="headerlink" title="2.2 凑数法另一种解读"></a>2.2 <a id='second'>凑数法另一种解读</a></h2><p>上面的这种方式如果用手算的话计算量太大，还不如直接用除2取余来的划算。所以有了第二种解读。</p>
 <p>另一种解读方式为<strong>比较法</strong>。</p>
 <p>还是上面这个例子，我们先列出一张2的n次幂的表，接着从高位开始用123与之比较，若123小则取0；若123大取1，且减去2的n次幂。然后移动至低一位用新的数接着比较。如下图所示，以此类推，当比较完所有位后，即可得出结果。</p>
