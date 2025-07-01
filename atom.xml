@@ -6,7 +6,7 @@
   <link href="https://huihui486.github.io/atom.xml" rel="self"/>
   
   <link href="https://huihui486.github.io/"/>
-  <updated>2025-06-27T16:01:24.763Z</updated>
+  <updated>2025-07-01T12:31:22.887Z</updated>
   <id>https://huihui486.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hexo + github page 搭建个人博客网站</title>
-    <link href="https://huihui486.github.io/2025/06/27/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
-    <id>https://huihui486.github.io/2025/06/27/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</id>
-    <published>2025-06-27T08:53:10.000Z</published>
-    <updated>2025-06-27T16:01:24.763Z</updated>
+    <link href="https://huihui486.github.io/2025/02/15/Tutorial/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
+    <id>https://huihui486.github.io/2025/02/15/Tutorial/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</id>
+    <published>2025-02-15T08:53:10.000Z</published>
+    <updated>2025-07-01T12:31:22.887Z</updated>
     
     
     <summary type="html">从零开始搭博客...</summary>
@@ -35,18 +35,64 @@
     
     <category term="教程" scheme="https://huihui486.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="技术" scheme="https://huihui486.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="github" scheme="https://huihui486.github.io/tags/github/"/>
     
     <category term="Hexo" scheme="https://huihui486.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
+    <title>Node.js安装及配置</title>
+    <link href="https://huihui486.github.io/2025/02/12/Tutorial/Node-js%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
+    <id>https://huihui486.github.io/2025/02/12/Tutorial/Node-js%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</id>
+    <published>2025-02-12T08:16:37.000Z</published>
+    <updated>2025-07-01T12:31:13.444Z</updated>
+    
+    
+    <summary type="html">Node.js及npm教程</summary>
+    
+    
+    
+    <category term="教程" scheme="https://huihui486.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Node.js" scheme="https://huihui486.github.io/categories/%E6%95%99%E7%A8%8B/Node-js/"/>
+    
+    
+    <category term="教程" scheme="https://huihui486.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Node.js" scheme="https://huihui486.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git安装及配置</title>
+    <link href="https://huihui486.github.io/2025/02/10/Tutorial/Git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"/>
+    <id>https://huihui486.github.io/2025/02/10/Tutorial/Git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</id>
+    <published>2025-02-10T02:44:48.000Z</published>
+    <updated>2025-07-01T12:30:58.953Z</updated>
+    
+    
+    <summary type="html">通过SSH认证连接至github</summary>
+    
+    
+    
+    <category term="教程" scheme="https://huihui486.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="github" scheme="https://huihui486.github.io/categories/%E6%95%99%E7%A8%8B/github/"/>
+    
+    
+    <category term="教程" scheme="https://huihui486.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="github" scheme="https://huihui486.github.io/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python破解压缩包密码</title>
-    <link href="https://huihui486.github.io/2023/02/07/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/"/>
-    <id>https://huihui486.github.io/2023/02/07/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/</id>
+    <link href="https://huihui486.github.io/2023/02/07/Python/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/"/>
+    <id>https://huihui486.github.io/2023/02/07/Python/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/</id>
     <published>2023-02-07T10:29:08.000Z</published>
-    <updated>2023-06-17T02:25:22.420Z</updated>
+    <updated>2025-07-01T12:23:17.217Z</updated>
     
     
     <summary type="html">zip、7z、rar等压缩包统统拿下</summary>
@@ -70,10 +116,10 @@
   
   <entry>
     <title>按序输出方形位置信息</title>
-    <link href="https://huihui486.github.io/2023/02/04/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/"/>
-    <id>https://huihui486.github.io/2023/02/04/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/</id>
+    <link href="https://huihui486.github.io/2023/02/04/Python/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/"/>
+    <id>https://huihui486.github.io/2023/02/04/Python/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/</id>
     <published>2023-02-04T13:12:45.000Z</published>
-    <updated>2023-04-01T02:04:35.737Z</updated>
+    <updated>2025-07-01T12:24:58.954Z</updated>
     
     
     <summary type="html">小需求...</summary>
@@ -96,7 +142,7 @@
     <link href="https://huihui486.github.io/2023/01/19/%E8%AF%B4%E6%98%8E/"/>
     <id>https://huihui486.github.io/2023/01/19/%E8%AF%B4%E6%98%8E/</id>
     <published>2023-01-19T10:29:40.000Z</published>
-    <updated>2025-06-27T07:50:07.328Z</updated>
+    <updated>2025-07-01T12:20:38.353Z</updated>
     
     
     <summary type="html">一些事项...</summary>
@@ -108,10 +154,10 @@
   
   <entry>
     <title>凑数法实现十进制转二进制</title>
-    <link href="https://huihui486.github.io/2023/01/18/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
-    <id>https://huihui486.github.io/2023/01/18/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/</id>
+    <link href="https://huihui486.github.io/2023/01/18/Python/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/"/>
+    <id>https://huihui486.github.io/2023/01/18/Python/%E5%87%91%E6%95%B0%E6%B3%95%E5%AE%9E%E7%8E%B0%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6/</id>
     <published>2023-01-18T09:33:39.000Z</published>
-    <updated>2025-06-27T03:16:17.709Z</updated>
+    <updated>2025-07-01T12:27:18.522Z</updated>
     
     
     <summary type="html">凑数法vs除2取余+乘2取整</summary>
@@ -133,10 +179,10 @@
   
   <entry>
     <title>B站直播弹幕姬</title>
-    <link href="https://huihui486.github.io/2023/01/17/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/"/>
-    <id>https://huihui486.github.io/2023/01/17/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/</id>
+    <link href="https://huihui486.github.io/2023/01/17/Bilibili_danmuji/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/"/>
+    <id>https://huihui486.github.io/2023/01/17/Bilibili_danmuji/B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95%E5%A7%AC/</id>
     <published>2023-01-17T08:42:21.000Z</published>
-    <updated>2023-04-01T02:14:28.826Z</updated>
+    <updated>2025-07-01T12:04:47.661Z</updated>
     
     
     <summary type="html">基于pyqt5，websocket协议b站直播弹幕显示软件</summary>
@@ -164,10 +210,10 @@
   
   <entry>
     <title>AioWebSocket实现python异步接收B站直播弹幕</title>
-    <link href="https://huihui486.github.io/2023/01/16/AioWebSocket%E5%AE%9E%E7%8E%B0python%E5%BC%82%E6%AD%A5%E6%8E%A5%E6%94%B6B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95/"/>
-    <id>https://huihui486.github.io/2023/01/16/AioWebSocket%E5%AE%9E%E7%8E%B0python%E5%BC%82%E6%AD%A5%E6%8E%A5%E6%94%B6B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95/</id>
+    <link href="https://huihui486.github.io/2023/01/16/Bilibili_danmuji/AioWebSocket%E5%AE%9E%E7%8E%B0python%E5%BC%82%E6%AD%A5%E6%8E%A5%E6%94%B6B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95/"/>
+    <id>https://huihui486.github.io/2023/01/16/Bilibili_danmuji/AioWebSocket%E5%AE%9E%E7%8E%B0python%E5%BC%82%E6%AD%A5%E6%8E%A5%E6%94%B6B%E7%AB%99%E7%9B%B4%E6%92%AD%E5%BC%B9%E5%B9%95/</id>
     <published>2023-01-16T01:38:20.000Z</published>
-    <updated>2023-04-01T02:07:08.992Z</updated>
+    <updated>2025-07-01T12:04:16.677Z</updated>
     
     
     <summary type="html">基于websocket协议模拟浏览器获取b站直播弹幕</summary>
@@ -192,7 +238,7 @@
     <link href="https://huihui486.github.io/2023/01/14/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
     <id>https://huihui486.github.io/2023/01/14/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
     <published>2023-01-14T15:00:00.000Z</published>
-    <updated>2023-04-01T02:01:58.076Z</updated>
+    <updated>2025-07-01T12:20:47.325Z</updated>
     
     
     <summary type="html">my first words</summary>
