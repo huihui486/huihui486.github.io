@@ -1,5 +1,5 @@
-https://huihui486.github.io/2025/02/15/Tutorial/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/
+https://huihui486.github.io/2025/03/03/Tutorial/Hexo/Hexo%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93%E9%97%AE%E9%A2%98/
+https://huihui486.github.io/2025/02/15/Tutorial/Hexo/Hexo-github-page-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/
 https://huihui486.github.io/2025/02/12/Tutorial/Node-js%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/
 https://huihui486.github.io/2025/02/10/Tutorial/Git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/
 https://huihui486.github.io/2023/02/07/Python/python%E7%A0%B4%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%8C%85%E5%AF%86%E7%A0%81/
-https://huihui486.github.io/2023/02/04/Python/%E6%8C%89%E5%BA%8F%E8%BE%93%E5%87%BA%E6%96%B9%E5%BD%A2%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/
